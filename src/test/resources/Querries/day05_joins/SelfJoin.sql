@@ -5,7 +5,7 @@ SELECT FIRST_NAME, MANAGER_ID
 from EMPLOYEES where FIRST_NAME = 'Neena';
 
 select * from EMPLOYEES
-where EMPLOYEE_ID = (select MANAGER_ID from EMPLOYEES where FIRST_NAME = 'Neena')
+where EMPLOYEE_ID = (select MANAGER_ID from EMPLOYEES where FIRST_NAME = 'Neena');
 
 
 select workers.FIRST_NAME, workers.LAST_NAME, managers.FIRST_NAME, managers.LAST_NAME
